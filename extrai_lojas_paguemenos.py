@@ -30,8 +30,8 @@ stores = soup.find_all('div', {'class': 'box_loja'})
 
 # Criando uma lista para armazenar as informações
 store_list = []
-#
-# # Iterando sobre todas as lojas encontradas
+
+# Iterando sobre todas as lojas encontradas
 for store in stores:
     # Verificando se a tag com a classe desejada existe
     name_element = store.find('h3', {'class': 'title_loja'})
