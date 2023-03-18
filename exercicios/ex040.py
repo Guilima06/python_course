@@ -9,7 +9,7 @@ media = (n1 + n2)/2
 print('A média atingida foi {:.2f}.'.format(media))
 if media < 5:
     print('Você foi reprovado.')
-elif 5 < media < 6.9:
+elif 5 <= media < 7:
     print('Você está de recuperação.')
 else:
     print('Você foi aprovado.')

@@ -10,7 +10,7 @@ if l1 > (l2 + l3) and l2 > (l1 + l3) and l3 > (l1 + l2):
 elif l1 == l2 == l3:
     print('As medidas informadas formam um triangulo.')
     print('Este é um triângulo equilátero.')
-elif l1 != l2 != l3:
+elif l1 != l2 != l3 != l1:
     print('As medidas informadas formam um triangulo.')
     print('Este é um triângulo escaleno.')
 else:

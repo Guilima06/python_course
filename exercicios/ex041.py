@@ -15,7 +15,7 @@ elif 9 < idade <= 14:
     print('A categoria do atleta é: Infantil.')
 elif 14 < idade <= 19:
     print('A categoria do atleta é: Junior.')
-elif 19 < idade <= 20:
+elif 19 < idade <= 25:
     print('A categoria do atleta é: Senior.')
 else:
     print('A categoria do atleta é: Master.')
