@@ -8,7 +8,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 import time
 
-browser = webdriver.Chrome()
+options = webdriver.ChromeOptions()
+options.add_argument("--auto-open-devtools-for-tabs")
+browser = webdriver.Chrome(options=options)
 site = str('https://online.g4educacao.com/')
 browser.get(site)
 assert 'G4' in browser.title

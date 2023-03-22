@@ -1,6 +1,7 @@
 import pandas as pd
 import tkinter as tk
 from tkinter import filedialog
+import openpyxl
 
 
 # Cria uma janela de diálogo para selecionar o arquivo de entrada
