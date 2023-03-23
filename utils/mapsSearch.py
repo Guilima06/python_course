@@ -8,7 +8,7 @@ import tkinter as tk
 from tkinter import filedialog
 from tkinter.filedialog import asksaveasfilename
 import pandas as pd
-
+# pesquisar endereço no google maps, retornando endereço pelo request
 
 root = tk.Tk()
 root.withdraw()
@@ -16,7 +16,7 @@ file_path = filedialog.askopenfilename()
 
 # Lê o arquivo Excel e armazena os dados em um DataFrame
 store_list = pd.read_excel(file_path)
-
+print(store_list.columns)
 browser = webdriver.Chrome()
 site = str('https://www.google.com/maps')
 browser.get(site)
