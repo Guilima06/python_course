@@ -1,6 +1,7 @@
 import pandas as pd
 import utilsFunctions
 
+
 # clientes_form = utilsFunctions.read_excel()
 # print(clientes_form.columns)
 # nome_fantasia = clientes_form['Nome Fantasia']
