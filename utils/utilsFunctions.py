@@ -71,3 +71,6 @@ def open_console():
     options = webdriver.ChromeOptions()
     options.add_argument("--auto-open-devtools-for-tabs")
     return webdriver.Chrome(options=options)
+
+def input_int(texto):
+    return int(input(texto))
