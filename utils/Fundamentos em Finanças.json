@@ -1,0 +1,371 @@
+{
+    "nome_curso": "Fundamentos em Finan\u00e7as",
+    "modulos": [
+        {
+            "index_modulo": 1,
+            "nome_modulo": "Introdu\u00e7\u00e3o",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Quem \u00e9 o mentor e o que esperar do curso",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62227e8eab900401f256552fUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538799969?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "Onboarding",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62227ea345fb794349523184Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538800131?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "Introdu\u00e7\u00e3o aos m\u00f3dulos",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622286b67d919a6c44061d0fUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/545041243?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 4,
+                    "nome_video": "Baixe os materiais do curso",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=fundamentos-financas_6224f0238eb8bUnit",
+                    "url_video_vimeo": "MATERIAIS"
+                }
+            ]
+        },
+        {
+            "index_modulo": 2,
+            "nome_modulo": "Defini\u00e7\u00f5es b\u00e1sicas",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Regime de Compet\u00eancia x Regime de Caixa",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622293ece859d6327f664bd7Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/545041243?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "Exemplo: DRE, BP e DFC",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622293fd48f9db49964dad1fUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538796342?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "Estrutura t\u00edpica de um DRE (I)",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6222940ed43d7e5c556af73eUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/542282747?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 4,
+                    "nome_video": "Estrutura t\u00edpica de um DRE (II)",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6222942565576a778821f838Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538797000?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 5,
+                    "nome_video": "Exemplo: estrutura t\u00edpica de um DRE",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229449e783ba2a98587787Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538797256?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 6,
+                    "nome_video": "Case DRE",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622294597a842574a3535661Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/545041157?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 7,
+                    "nome_video": "Balan\u00e7o patrimonial t\u00edpico",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6222946c63bdc268fa0f16d4Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538797906?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 8,
+                    "nome_video": "Exemplo: balan\u00e7o patrimonial t\u00edpico",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229481b9d6195a7516badeUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/539204020?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 9,
+                    "nome_video": "A import\u00e2ncia do BP para sua empresa",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622294929b22c546ec25d5beUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538798307?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 10,
+                    "nome_video": "DFC: m\u00e9todos de elabora\u00e7\u00e3o",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622294a55154b52d0f40d8a1Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538798595?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 11,
+                    "nome_video": "Exemplo: DFC",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622294fa63bdc268fa0f16dbUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538798926?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 12,
+                    "nome_video": "Como montar um modelo operacional que conversa com o DRE, BP e DFC",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6222950b7cf66e44ea798266Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/539207233?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 13,
+                    "nome_video": "Exerc\u00edcio: modelo operacional",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6222951ac40a543a6b0407d0Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/539206666?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 14,
+                    "nome_video": "AfterClass - M\u00f3dulo 1",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6222952c6b3e235842041869Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538800307?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 15,
+                    "nome_video": "Resumo do m\u00f3dulo",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6222953e057aa132fa134ad1Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538799770?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 16,
+                    "nome_video": "Avalie o m\u00f3dulo",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6231f1751d40a7098c44bbb9Unit",
+                    "url_video_vimeo": "AVALIACAO"
+                }
+            ]
+        },
+        {
+            "index_modulo": 3,
+            "nome_modulo": "Unit Economics",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Introdu\u00e7\u00e3o ao m\u00f3dulo - Unit Economics: o que s\u00e3o e para que servem",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622295966501aa1a8e336e7bUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538851149?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "Margem de contribui\u00e7\u00e3o e margem unit\u00e1ria",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622295a59ed57810180bf9faUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538851516?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "Exerc\u00edcio: margem de contribui\u00e7\u00e3o e margem unit\u00e1ria",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622295b9c33d570c6312a3d7Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538851291?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 4,
+                    "nome_video": "O conceito de ponto de equil\u00edbrio e como utiliz\u00e1-lo",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622295de39eff92d470505a6Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538852145?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 5,
+                    "nome_video": "Exerc\u00edcio: ponto de equil\u00edbrio",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622295f1fc06f049f7710e28Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538851693?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 6,
+                    "nome_video": "Exerc\u00edcio: Desconto e Velocidade de Vendas",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622295ffee01ee03565764b8Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538851849?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 7,
+                    "nome_video": "Exerc\u00edcio: Custo Fixo e Custo Vari\u00e1vel",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6222961370e94336965f4103Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538852013?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 8,
+                    "nome_video": "Capital de Giro",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622296223dddde7d6e22fabcUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538852262?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 9,
+                    "nome_video": "Exerc\u00edcio: como calcular capital de giro",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622296356ad1b278fd33ccfdUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538852453?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 10,
+                    "nome_video": "Capital de giro e rela\u00e7\u00e3o com crescimento",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229643a4b72427aa7a1d9dUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538852958?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 11,
+                    "nome_video": "Exerc\u00edcio: capital de giro e rela\u00e7\u00e3o com crescimento",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229657658e381e92058577Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538853070?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 12,
+                    "nome_video": "AfterClass - M\u00f3dulo 2",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622296693a93b8230e058f4fUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538853594?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 13,
+                    "nome_video": "Resumo do m\u00f3dulo",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6222967c81240c6c172a1e24Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538853440?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 14,
+                    "nome_video": "Avalie o M\u00f3dulo",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6231f1b3370f7143904bc0bfUnit",
+                    "url_video_vimeo": "AVALIACAO"
+                }
+            ]
+        },
+        {
+            "index_modulo": 4,
+            "nome_modulo": "Conectando as vis\u00f5es operacionais e financeiras e acompanhando seu plano",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Introdu\u00e7\u00e3o ao m\u00f3dulo - Como criar um plano de crescimento de longo prazo",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6222975778cd840e6546221dUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538869491?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "Como desenvolver indicadores para o monitoramento desse plano",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6222976660a2ee27c54857c3Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538869759?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "Exerc\u00edcio: desenvolvendo indicadores financeiros",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229789a0e42267b40d5b88Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538869902?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 4,
+                    "nome_video": "AfterClass - M\u00f3dulo 3",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622297a36b3e23584204186eUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538870229?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 5,
+                    "nome_video": "Resumo do M\u00f3dulo",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=622297b060a2ee27c54857c5Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538870092?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 6,
+                    "nome_video": "Avalie o M\u00f3dulo",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6231f1ecee9684695b16ddebUnit",
+                    "url_video_vimeo": "AVALIACAO"
+                }
+            ]
+        },
+        {
+            "index_modulo": 5,
+            "nome_modulo": "Compet\u00eancias t\u00edpicas e organiza\u00e7\u00e3o b\u00e1sica de uma \u00e1rea financeira",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Compet\u00eancias t\u00edpicas e organiza\u00e7\u00e3o b\u00e1sica de uma \u00e1rea financeira",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229a155f84b12c3b44bd1bUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538904196?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "AfterClass - M\u00f3dulo 4",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229a29609b8836a23fc559Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538905823?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "Avalie o M\u00f3dulo",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6231f28975bf663ee11dc95bUnit",
+                    "url_video_vimeo": "AVALIACAO"
+                }
+            ]
+        },
+        {
+            "index_modulo": 6,
+            "nome_modulo": "Princ\u00edpios de Engenharia Econ\u00f4mica",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Introdu\u00e7\u00e3o ao m\u00f3dulo - Princ\u00edpios de Engenharia econ\u00f4mica",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229a4257729e75d237db55Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538904449?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "O princ\u00edpio de alavancagem e crescimento via d\u00edvida",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229a55c86c511d193adc57Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538904527?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "Exerc\u00edcio: alavancagem",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229b198a2e353c9f620149Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538904777?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 4,
+                    "nome_video": "Exemplo: d\u00edvida x equity",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229b27e47fc00c17631ec0Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538905102?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 5,
+                    "nome_video": "Benef\u00edcios Fiscais",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229b3736a03816b759000dUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538905377?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 6,
+                    "nome_video": "Estruturas societ\u00e1rias",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229b43105ec134bf545f37Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538905522?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 7,
+                    "nome_video": "Case: an\u00e1lise pr\u00e1tica de Balan\u00e7os",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229c71b105c841aa05e82fUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/654114678?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 8,
+                    "nome_video": "Resumo do m\u00f3dulo",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229c800b096244ab25331aUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538905655?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 9,
+                    "nome_video": "At\u00e9 a pr\u00f3xima!",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62229c9120073539951d041dUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/538905723?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 10,
+                    "nome_video": "Avalie o M\u00f3dulo",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=6231f3087b31cd554479c029Unit",
+                    "url_video_vimeo": "AVALIACAO"
+                }
+            ]
+        },
+        {
+            "index_modulo": 7,
+            "nome_modulo": "Certificado de Conclus\u00e3o",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Certificado Fundamentos em Finan\u00e7as",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-financas&unit=62312c3524f87d654e587b96Unit",
+                    "url_video_vimeo": "CERTIFICADO"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,263 @@
+{
+    "nome_curso": "Fundamentos em Contrata\u00e7\u00e3o",
+    "modulos": [
+        {
+            "index_modulo": 1,
+            "nome_modulo": "Introdu\u00e7\u00e3o",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Conhe\u00e7a a Mentora!",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fe85fd41f8c75410cb3e6Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541691018?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "Indique e ganhe!",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=6224e119bb472a22cb71911aUnit",
+                    "url_video_vimeo": "PROPAGANDA"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "Baixe o material do curso",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=fundamentos-contratacao_62b0ba712b022Unit",
+                    "url_video_vimeo": "MATERIAL"
+                }
+            ]
+        },
+        {
+            "index_modulo": 2,
+            "nome_modulo": "As bases de contrata\u00e7\u00e3o \u00c1gil",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Cultura e Valores",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fe8ff2d505c4f7077ef55Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541691251?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "Funil de Contrata\u00e7\u00e3o e Frameworks",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fe9141f1afe1b2a0d5787Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541691844?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "Pap\u00e9is e Responsabilidades: RH, Gestores e CEO",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fe9388cb23a39347e5e68Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541692571?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 4,
+                    "nome_video": "Desenhando o processo ideal",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fe946feaf3e15d94c14c8Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541666072?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 5,
+                    "nome_video": "Diversidade e Inclus\u00e3o",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fe96ac6f5e5746d41b0feUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541666626?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 6,
+                    "nome_video": "Avalie o M\u00f3dulo 2 - As bases de contrata\u00e7\u00e3o \u00c1gil",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621ff161ee9ff362ea4b3985Unit",
+                    "url_video_vimeo": "AVALIACAO"
+                }
+            ]
+        },
+        {
+            "index_modulo": 3,
+            "nome_modulo": "Marca empregadora e for\u00e7as da marca",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Constru\u00e7\u00e3o do EVP",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fe99bfd513157984425b6Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541775834?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "Candidate Persona",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fe9b2c2977460b53b0e8aUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541666885?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "Inbound recruiting: como atrair as pessoas certas",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fea199b49b264ad1f176fUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541667305?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 4,
+                    "nome_video": "Avalie o M\u00f3dulo 3 - Marca empregadora e for\u00e7as da marca",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621ff1ac7107f5375e3487d7Unit",
+                    "url_video_vimeo": "AVALIACAO"
+                }
+            ]
+        },
+        {
+            "index_modulo": 4,
+            "nome_modulo": "Como criar e divulgar suas vagas do jeito certo",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Defini\u00e7\u00e3o de Hard e Soft Skill",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fe9c372725f1d4d1951a6Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541667796?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "Testes de Perfil e Testes T\u00e9cnicos",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fe9d41a4d83173b0e9c85Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541668201?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "Job Description",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fe9e7a88fc53bf45c525aUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541668633?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 4,
+                    "nome_video": "Remunera\u00e7\u00e3o",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fe9f7b5640e29540fd086Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541669154?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 5,
+                    "nome_video": "P\u00e1gina de carreiras",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fea5c4df7263a217897bcUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541669434?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 6,
+                    "nome_video": "Divulga\u00e7\u00e3o",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fea6d18febe72b84d036aUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541669709?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 7,
+                    "nome_video": "Cases e Plataformas",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fea7f5051781c19652d1fUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541756801?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 8,
+                    "nome_video": "Avalie o M\u00f3dulo 4 - Como criar e divulgar vagas do jeito certo",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621ff1c12998942c9d476ac3Unit",
+                    "url_video_vimeo": "AVALIACAO"
+                }
+            ]
+        },
+        {
+            "index_modulo": 5,
+            "nome_modulo": "Como selecionar os melhores talentos",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Condu\u00e7\u00e3o de entrevistas estruturadas e com base na cultura",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621feb3c562a7403ce1fe321Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/541757063?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "Propostas Irrecus\u00e1veis",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621feb4b665a2d215102f118Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/558068272?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "AfterClass: Como selecionar os melhores talentos",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621feb5b2422644bf33c8bccUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/542177592?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 4,
+                    "nome_video": "Avalie o M\u00f3dulo 5 - Como selecionar os melhores talentos",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621ff1cf78d0896124408147Unit",
+                    "url_video_vimeo": "AVALIACAO"
+                }
+            ]
+        },
+        {
+            "index_modulo": 6,
+            "nome_modulo": "Candidate Experience",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Conceito e Import\u00e2ncia",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621feb9b559feb07931cf759Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/542183516?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "Feedbacks",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621febab624cab28b36759cfUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/542183764?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "Hacks e Boas Pr\u00e1ticas",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621febbc36b8b307297ec543Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/542184178?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 4,
+                    "nome_video": "Avalie o M\u00f3dulo 6 - Candidate Experience",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621ff1e214a0b309553720a8Unit",
+                    "url_video_vimeo": "AVALIACAO"
+                }
+            ]
+        },
+        {
+            "index_modulo": 7,
+            "nome_modulo": "Como fazer admiss\u00f5es",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Estruturas dos processos e must haves",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621feedfa86d5b5d7471ff0eUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/542211676?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 2,
+                    "nome_video": "Ferramentas e exemplos",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621feefd2998942c9d476abaUnit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/542211267?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 3,
+                    "nome_video": "Indicadores e Otimiza\u00e7\u00e3o dos Processos",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fef0d7d0c026c8874d357Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/542222231?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 4,
+                    "nome_video": "Encerramento do Curso",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621fef1c923d5635221d1829Unit",
+                    "url_video_vimeo": "https://player.vimeo.com/video/542174990?byline=0&portrait=0&title=0&autopause=0"
+                },
+                {
+                    "index_video": 5,
+                    "nome_video": "Avalie o M\u00f3dulo 7 - Como fazer admiss\u00f5es",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=621ff1f2f028c54ea4247ae8Unit",
+                    "url_video_vimeo": "AVALIACAO"
+                }
+            ]
+        },
+        {
+            "index_modulo": 8,
+            "nome_modulo": "Certificado de Conclus\u00e3o",
+            "lista_videos": [
+                {
+                    "index_video": 1,
+                    "nome_video": "Certificado Fundamentos em Contrata\u00e7\u00e3o",
+                    "url_video": "https://online.g4educacao.com/path-player?courseid=fundamentos-contratacao&unit=6231283df3cca52ea6269e69Unit",
+                    "url_video_vimeo": "CERTIFICADO"
+                }
+            ]
+        }
+    ]
+}
