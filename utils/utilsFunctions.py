@@ -10,17 +10,27 @@ from selenium.webdriver.common.keys import Keys
 import openpyxl
 
 
+def open_folder():
+    # Abre a janela do explorer para escolher um arquivo
+    root = tk.Tk()
+    root.withdraw()
+    return filedialog.askdirectory()
+
+
 def open_file():
     # Abre a janela do explorer para escolher um arquivo
     root = tk.Tk()
     root.withdraw()
     return filedialog.askopenfilename()
 
+# path = open_folder()
+# print(path)
 
-def read_excel():
+def read_excel(header = None):
     file_path = open_file()
     # Lê o arquivo Excel e armazena os dados em um DataFrame
-    return pd.read_excel(file_path)
+    return pd.read_excel(file_path, header=header) \
+        if header is not None else pd.read_excel(file_path)
 
 
 def write_excel(data):
@@ -29,6 +39,10 @@ def write_excel(data):
     # Salvando o dataframe em um arquivo Excel
     df.to_excel(file_name)
 
+
+def write_txt(data):
+    df = pd.DataFrame(data)
+    file_name = save_txt()
 
 def read_html():
     file_path = open_file()

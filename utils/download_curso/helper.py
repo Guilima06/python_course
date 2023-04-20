@@ -25,7 +25,8 @@ def load_json_data(json_file_path):
 
 def download_course(course_json_file_path):
     json_data = load_json_data(course_json_file_path)
-    course_name = json_data.get('nome_curso')
+    course_name_unformat = json_data.get('nome_curso')
+    course_name = json_data.get('nome_curso').replace('/', '').replace(':', '').replace('*').replace('?', '').replace('<','').replace('>', '')
     course_folder_path = os.path.join(COURSES_BASE_PATH, course_name)
     create_folder(course_folder_path)
     course_modules = json_data.get('modulos')
@@ -45,8 +46,10 @@ def download_course(course_json_file_path):
                 print('Não é possível fazer o download. ', erro_url)
 
 
-# caminho_arquivo_json_curso = utilsFunctions.open_file()
-# download_course(caminho_arquivo_json_curso)
-dir = 'C:\\Users\\Guilherme\\Desktop\\Download Cursos\\download\\courses\Fundamentos em Contratação\\5 - Como selecionar os melhores talentos'
-file_name = '3 - AfterClass'
-download_video(vimeo_url='https://player.vimeo.com/video/542177592?byline=0&portrait=0&title=0&autopause=0', directory=dir , filename=file_name)
+caminho_arquivo_json_curso = utilsFunctions.open_file()
+download_course(caminho_arquivo_json_curso)
+
+
+# dir = 'C:\\Users\\Guilherme\\Desktop\\Download Cursos\\download\\courses\Fundamentos em Contratação\\5 - Como selecionar os melhores talentos'
+# file_name = '3 - AfterClass'
+# download_video(vimeo_url='https://player.vimeo.com/video/542177592?byline=0&portrait=0&title=0&autopause=0', directory=dir , filename=file_name)
