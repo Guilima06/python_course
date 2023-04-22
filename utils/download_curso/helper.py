@@ -26,7 +26,7 @@ def load_json_data(json_file_path):
 def download_course(course_json_file_path):
     json_data = load_json_data(course_json_file_path)
     course_name_unformat = json_data.get('nome_curso')
-    course_name = json_data.get('nome_curso').replace('/', '').replace(':', '').replace('*').replace('?', '').replace('<','').replace('>', '')
+    course_name = json_data.get('nome_curso')
     course_folder_path = os.path.join(COURSES_BASE_PATH, course_name)
     create_folder(course_folder_path)
     course_modules = json_data.get('modulos')
@@ -38,6 +38,9 @@ def download_course(course_json_file_path):
         for video in module_video_list:
             video_number = video.get('index_video')
             video_name = video.get('nome_video')
+            invalid_chars = ['\\', '/', ':', '*', '?', '"', '<', '>', '|']
+            for char in invalid_chars:
+                video_name = video_name.replace(char, '_')
             video_file_name = f'{video_number} - {video_name}'
             video_url = video.get('url_video_vimeo')
             try:
