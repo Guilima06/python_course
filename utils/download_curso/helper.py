@@ -24,21 +24,23 @@ def load_json_data(json_file_path):
 
 
 def download_course(course_json_file_path):
+    invalid_chars = ['\\', '/', ':', '*', '?', '"', '<', '>', '|', ':']
     json_data = load_json_data(course_json_file_path)
-    course_name_unformat = json_data.get('nome_curso')
     course_name = json_data.get('nome_curso')
     course_folder_path = os.path.join(COURSES_BASE_PATH, course_name)
     create_folder(course_folder_path)
     course_modules = json_data.get('modulos')
     for module in course_modules:
         module_number = module.get('index_modulo')
-        module_folder_path = os.path.join(course_folder_path, f'{module_number} - {module.get("nome_modulo")}')
+        module_name = module.get('nome_modulo')
+        for char in invalid_chars:
+            module_name = module_name.replace(char, '_')
+        module_folder_path = os.path.join(course_folder_path, f'{module_number} - {module_name}')
         create_folder(module_folder_path)
         module_video_list = module.get('lista_videos')
         for video in module_video_list:
             video_number = video.get('index_video')
             video_name = video.get('nome_video')
-            invalid_chars = ['\\', '/', ':', '*', '?', '"', '<', '>', '|']
             for char in invalid_chars:
                 video_name = video_name.replace(char, '_')
             video_file_name = f'{video_number} - {video_name}'
