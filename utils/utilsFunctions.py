@@ -35,11 +35,11 @@ def read_excel(header=None):
         if header is not None else pd.read_excel(file_path)
 
 
-def write_excel(data):
-    df = pd.DataFrame(data)
-    file_name = save_excel()
-    # Salvando o dataframe em um arquivo Excel
-    df.to_excel(file_name)
+# def write_excel(data):
+#     df = pd.DataFrame(data)
+#     file_name = save_excel()
+#     # Salvando o dataframe em um arquivo Excel
+#     df.to_excel(file_name)
 
 
 def write_txt(data):
@@ -54,12 +54,13 @@ def read_html():
         return file.read()
 
 
-def save_excel(data):
+def save_excel(database):
+    data = pd.DataFrame(database)
     # abre a caixa de diálogo para seleção do local de salvamento do arquivo Excel
     filename = tk.filedialog.asksaveasfilename(title='Salvar arquivo Excel', filetypes=[('Excel files', '*.xlsx')])
     if not filename.endswith('.xlsx'):
         filename += '.xlsx'
-    data.to_excel(filename)
+    data.to_excel(filename, index=False)
 
 
 def save_txt():
@@ -71,8 +72,8 @@ def save_txt():
 
 
 def open_chrome():
-    browser = webdriver.Chrome()
-    return browser
+    driver = webdriver.Chrome()
+    return driver
 
 
 def insert_site(browser, site):
@@ -124,3 +125,9 @@ def win10_notification(title, msg):
         icon_path=None,
         duration=5  # 5 segundos
     )
+
+def find_loja(lista, nome_parametro, nome_buscado):
+    for item in lista:
+        if item[nome_parametro] == nome_buscado:
+            return item
+    return None
