@@ -3,10 +3,6 @@
 # o menor e o maior valor que estão na tupla.
 import random
 
-numeros = ()
-contador = 0
-while contador < 5:
-    numeros[contador] = random.randint(1, 5)
-    contador += 1
+numeros = (random.randint(1,10), random.randint(1,10), random.randint(1,10), random.randint(1,10), random.randint(1,10))
 print(numeros)
 

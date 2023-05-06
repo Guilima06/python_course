@@ -11,6 +11,7 @@ relatorio = []
 
 for index, row in rel_atendimento.iterrows():
     loja_atendimento = row['Loja']
+    roteiro = row['Roteiro']
     cargo_func_atendimento = row['Cargo']
     funcionario_atendimento = row['Funcionário']
     data_atendimento = row['Data']
@@ -20,6 +21,7 @@ for index, row in rel_atendimento.iterrows():
     adc_manual = row['Adicionado manualmente']
     atendimento = {
         'Loja': loja_atendimento,
+        'Roteiro': roteiro,
         'Cargo': cargo_func_atendimento,
         'Funcionário': funcionario_atendimento,
         'Data': data_atendimento,
@@ -70,6 +72,7 @@ for atendimento in lista_atendimentos:
                     'Loja': atendimento['Loja'],
                     'Cidade': loja['Cidade - UF'],
                     'Regional': loja['Regional'],
+                    'Roteiro': atendimento['Roteiro'],
                     'Cargo': atendimento['Cargo'],
                     'Funcionário': atendimento['Funcionário'],
                     'Data': atendimento['Data'],
@@ -93,6 +96,7 @@ for atendimento in lista_atendimentos:
                 'Loja': atendimento['Loja'],
                 'Cidade': loja['Cidade - UF'],
                 'Regional': loja['Regional'],
+                'Roteiro': atendimento['Roteiro'],
                 'Cargo': atendimento['Cargo'],
                 'Funcionário': atendimento['Funcionário'],
                 'Data': atendimento['Data'],
@@ -101,12 +105,11 @@ for atendimento in lista_atendimentos:
                 'Check-out': atendimento['Check-out'],
                 'Adicionado manualmente': atendimento['Adicionado manualmente'],
                 'Visita controle': visita_controle,
-                'Data da visita': visita['Data da visita'],
-                'Tipo de autenticação': visita['Tipo de autenticação']
+                'Data da visita': '',
+                'Tipo de autenticação': ''
             }
             relatorio.append(analise)
 
 
 relatorio_ordenado = sorted(relatorio, key=lambda relatorio: relatorio['Loja'])
-# print(relatorio_ordenado)
 utilsFunctions.save_excel(relatorio_ordenado)
