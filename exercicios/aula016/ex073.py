@@ -9,13 +9,14 @@ times = ('Botafogo', 'Fortaleza', 'Palmeiras', 'Internacional', 'Fluminense', 'C
          "Vasco da Gama", 'Atlético-MG', 'Santos', 'Bragantino', 'Flamengo', 'Athletico-PR', 'Bahia', 'Goiás',
          "Corinthians", 'Cuiabá', 'Coritiba', 'América-MG',
 )
-print(f'Os 5 primeiros colocados são: {times[0]}, {times[1]}, {times[2]}, {times[3]} e {times[4]}.')
-print(f'Os 4 últimos colocados são: {times[-4]}, {times[-3]}, {times[-2]} e {times[-1]}.')
+print('-='*20)
+print(f'Lista de times {times}')
+print('-='*20)
+print(f'Os 5 primeiros colocados são: {times[0:4]}.')
+print('-='*20)
+print(f'Os 4 últimos colocados são: {times[-4:]}.')
+print('-='*20)
 print(f'A ordem alfabetica dos times é {sorted(times)}')
-contador = 0
-for time in times:
-    if times[contador] == 'Cruzeiro':
-        print(f'O Cruzeiro está na {contador}ª posição. ')
-        break
-    else:
-        contador += 1
+print('-='*20)
+print(f'O Cruzeiro está na {times.index("Cruzeiro")+1}ª posição. ')
+print('-='*20)

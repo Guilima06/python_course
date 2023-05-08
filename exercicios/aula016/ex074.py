@@ -5,5 +5,4 @@ import random
 
 numeros = (random.randint(1,10), random.randint(1,10), random.randint(1,10), random.randint(1,10), random.randint(1,10))
 print(numeros)
-num_ordenado = sorted(numeros)
-print(f'O maior número é {num_ordenado[-1]} e o menor número é {num_ordenado[0]}')
+print(f'O maior número é {max(numeros)} e o menor número é {min(numeros)}')
