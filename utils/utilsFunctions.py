@@ -75,6 +75,9 @@ def open_chrome():
     driver = webdriver.Chrome()
     return driver
 
+def open_firefox():
+    driver = webdriver.Firefox
+    return driver
 
 def insert_site(browser, site):
     open_site = str(site)
@@ -91,10 +94,13 @@ def open_console():
     return webdriver.Chrome(options=options)
 
 
-def token_dysrup():
-    employer_code = input(str('Insira o código do Empregador: '))
-    user = input(str('Insira o usuário: '))
-    password = input(str('Insira a senha: '))
+def get_token_dysrup():
+    # employer_code = input(str('Insira o código do Empregador: '))
+    # user = input(str('Insira o usuário: '))
+    # password = input(str('Insira a senha: '))
+    employer_code = '5YTD7'
+    user = 'suporte@dysrup.com.br'
+    password = 'Dysrup@2023'
 
     response = requests.post('https://app.dysrup.com.br/api/v1/login', json={
         "username": user,
@@ -102,11 +108,7 @@ def token_dysrup():
         "type": "web",
         "employer_code": employer_code,
     })
-    binario_get = response.content.decode('utf-8')
-    # converter em objeto dicionário
-    dictionary = json.loads(binario_get)
 
-    token = dictionary['data']['token']['access_token']
     headers = {'Authorization': f'Bearer {token}'}
     return headers
 
