@@ -1,7 +1,7 @@
 import requests
 from utils import utilsFunctions
 
-token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZTI5MWFmNjExMWUzNzQyNzFlYTliMTVkYmM2ZmVkOTA5MjU0ZmI3YWNlY2E2ZmQ2YTdiNTIwNzkwZjY2MTg3YTc2ZTNhOTVhYjU3ZjEyYzkiLCJpYXQiOjE2OTIyMDc3NTcuNTEwMjI5LCJuYmYiOjE2OTIyMDc3NTcuNTEwMjMxLCJleHAiOjE2OTk5ODM3NTcuNTAyNjY2LCJzdWIiOiIyMTI1Iiwic2NvcGVzIjpbXX0.g-vl3kQ4lz1hw0QJP-XhqQe4i1TIW0ve56JxbvQazVHILNJ-nalj4KF9rIwGimtGm-5FnBAu2tquuetdSo1XuxX8qnHD61ZVDTgctmbLnYp_5NUyl9ODaEEWzcIC_IY7sIqhXztX9yx0HTshvzH7_qFyOKOuERU2XLdhKElHFt_Baa6Ln55LhM7Br-tMRri3CDo3Jv-tvqV8szg30gKlzlClfXOmB-K8qS6KRWkT4sFHDJH0jD8gGhWPr7i5MOWp1hFgGFfTElLr_a8Dr2KX3FoCH91401bpo7jr13Hn_PCSUq3k_vezCkgdcJJVoYXI15lpl_P5fpFBu-kOWnnqqWoHkxj47wwbYDFFvxQDgvIDVyb-tMz1zkpe6pI2RugGqQje79f9iUj70Z2ubmIiszuiTF-FgA9DTex2qeFxFS0u4j9beIfhJKIhLYFETyGN_OAtBDfyt_08jv8sRz3Qfo2ferQBHI7FB4y6Pjb4IUj54trhp2zxaIgxy35rKwypAekhV9sGjBNBxkq4i5j21-b_ZMeR03BvgCsul7EDXo86daIsOospdD18MZwp_KuP_XqqsqOgP3nWtD1w9MeziBJNWZf3crthtKpi44c3I9wF6jPWR7ckOdrlp9zMzvFhLrdyHMMTVDf4xqfnuQ2TowqNsFdLOV3tD7YWglKfzMs"
+token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNmVlMWVjNzkzNWY2NzJjMWQzODRiMzU2ODllY2Y3ZmMxNWY4NzljZDIyMDc5NDFjOGRjZWU2YTg2OGM3NTIwNzI2NWI5ZGM5ZmIyMTM0NjAiLCJpYXQiOjE2OTIyODMzOTUuMTkwMTgsIm5iZiI6MTY5MjI4MzM5NS4xOTAxODIsImV4cCI6MTcwMDA1OTM5NS4xODEzNDEsInN1YiI6IjIxMjUiLCJzY29wZXMiOltdfQ.pgaPYlCgmu6bS-kUlqkOFguc62vWlmEsVOYJGfx261cphM5CAfw7uVIhbm_dgRqvqHfaST2u7yFf57DuHpFreveXwkICi7GYR_EG0AQgvHWbyDYmjB_QM3Tx1QeVDt9_IvplRQ-H5Anp2Zj2mQksgz6sizLcxx7GyEYEPzk4cCXZ5yeC6U4vtN_9TEbzOU3LFO7H6XBj2gAFN2RiwRvCx3_9hO9pakCnnbMFUtDIHCPN8UEr6M7Di82Gz9JNrR_epzbOXTR1k_eZVKX79kdnYUXqEy7mjtZ4Cj3UqK4TJ4E8Tykh0C1xDNOb8MvJ309BLBWaXo6vB43FldY6TSzcyLV2o6lUwMxUvx_WZYszD8r5R-PS4d4DX-XuXLBFVgptM5v4LGihAVLkPedmcjMJSrA6Q3T8q3IJEzOMGc4khglEZFV1SUS90XyKsBLPSNBWTWFXx7XDyPW7oQ1g08xsv1Q086MK_Zwluh327XyREuV6784ZH6uPv84ceSd2zS1zQmnjtJTZwevW0riTNDPHTgGFtyYgTUSsPlA4P6LEFRMEhZiP2T85ESh1lDGlDQz2RtmbQ6W5MR_LS9gqKdXT-ptu-I4oiON7mijxUlBowpFWldoeHLC9jmHILixMO6MeZ8DviYzENN72H5JR53xI1Ps8FpkQ0mp2MxzK8X7D7X8"
 headers = {'Authorization': f'Bearer {token}'}
 
 
@@ -16,9 +16,9 @@ def relatorio():
     contracts = get_contracts(contracts_param)
     contracts_per_client = clients_conctracts(clients, contracts)
 
-    # analyze_routes(contracts_per_client)
+    analyze_routes(contracts_per_client)
     # print(itf)
-    get_contracts_by_store_id()
+    # get_contracts_by_store_id()
 
 
 
@@ -119,13 +119,22 @@ def get_contracts_in_itinerary_per_client(ids_itineraries, contracts_per_client)
     return client_and_contract_list
 
 
+def get_contracts_in_itinerary(itinerary_informations):
+    contracts_in_itinerary = []
+    for contract_itinerary in itinerary_informations['data']['contracts']:
+        # print(contract_itinerary)
+        contracts_in_itinerary.append(contract_itinerary)
+    return contracts_in_itinerary
+
+
+
 def analyze_routes(contracts_per_client):
     itineraries = get_list_itineraries()
     ids_itineraries = list(map(lambda x: x.get('itinerary_id'), itineraries['data']))
     for itinerary in ids_itineraries:
-        itinerary_id = itinerary
         itinerary_informations = get_itineraries_informations(itinerary)
-        contracts_in_itinerary = get_contracts_in_itinerary_per_client(itinerary_id, contracts_per_client)
+        contracts_in_itinerary = get_contracts_in_itinerary(itinerary_informations)
+        # contracts_in_itinerary_per_client = get_contracts_in_itinerary_per_client(itinerary, contracts_per_client)
         route_list = []
         for route in itinerary_informations['data']['routes']:
             route_information = route
@@ -133,13 +142,29 @@ def analyze_routes(contracts_per_client):
 
         for row in route_list:
             repositor_id = row['repositor_id']
-            route_number = row['row']
+            row_number = row['row']
+            route_number = str(row_number)
+            # print(route_number)
             route_days = row['days']
             for day, ids in route_days.items():
                 day = day
                 for id in ids:
                     store_id = id
-                    # get_contracts_by_store_id(store_id)
+                    params = {
+                        'store_id': store_id,
+                        'contract_ids': contracts_in_itinerary
+                    }
+                    contracts_by_store = get_contracts_by_store_id(params)
+                    params_selecteds = {
+                        'day': day,
+                        'route_number': route_number,
+                        'store_id': store_id,
+                        'contracts_id': contracts_by_store,
+                        'itinerary_id': itinerary
+                    }
+                    print(params_selecteds)
+                    selected_contracts = get_selected_contracts_by_route(params_selecteds)
+                    # print(selected_contracts)
 
 
 
@@ -147,17 +172,24 @@ def analyze_routes(contracts_per_client):
 
 
 
-def get_contracts_by_store_id():
-    store_params = {
-        'store_id': 526
-    }
+def get_contracts_by_store_id(store_params):
     url = 'https://app.dysrup.com.br/api/v1/web/itinerary/get_contracts_by_store_id'
     response = requests.post(url, headers=headers, json=store_params)
     contracts_by_store = response.json()
     print(contracts_by_store)
-    # return contracts_by_store
+    contracts_id = []
+    for contract in contracts_by_store['data']['store_contracts']:
+        contract_id = contract['id']
+        contracts_id.append(contract_id)
+    print(contracts_id)
+    return contracts_id
 
 
+def get_selected_contracts_by_route(params):
+    url = 'https://app.dysrup.com.br/api/v1/web/itinerary/get_selected_contracts_by_route'
+    response = requests.post(url, headers=headers, json=params)
+    selected_contracts_by_route = response.json()
+    print(selected_contracts_by_route)
 
 
 
