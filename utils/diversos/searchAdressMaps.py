@@ -39,15 +39,14 @@ for index, row in store_list.iterrows():
     # print('response ok')
     html_content = browser.page_source
     # print(html_content)
-    #
-    # print(html_content)
+
     soup = BeautifulSoup(html_content, 'html.parser')
-    # endereco_element = soup.find("meta", {"property": "og:title"})
-    #  print('teste' + endereco_element)
-    # endereco = endereco_element["content"]
-    # print(endereco)
-    # address_list.append(endereco)
-    # time.sleep(1)
+    endereco_element = soup.find("meta", {"property": "og:title"})
+     # print('teste' + endereco_element)
+    endereco = endereco_element["content"]
+    print(endereco)
+    address_list.append(endereco)
+    time.sleep(1)
 
     icon = soup.find("img", {"src": "//www.gstatic.com/images/icons/material/system_gm/2x/place_gm_blue_24dp.png"})
 
