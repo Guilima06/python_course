@@ -25,8 +25,10 @@ def search_store_adressess(store_address, store_name):
     # Aguardando o carregamento completo da página
     time.sleep(2)
 
+    url = browser.current_url
+
     soup = get_formated_html_content()
-    address = search_adress_in_html(soup, store_name)
+    address = search_adress_in_html(soup, store_name, url)
     return address
 
 
@@ -36,30 +38,52 @@ def get_formated_html_content():
     return soup
 
 
-def search_adress_in_html(soup, store_name):
+def search_adress_in_html(soup, store_name, url):
     icon = soup.find("img", {"src": "//www.gstatic.com/images/icons/material/system_gm/2x/place_gm_blue_24dp.png"})
-    if not icon:
-        icon = soup.find("img", {"src": "//www.gstatic.com/images/icons/material/system_gm/1x/place_gm_blue_24dp.png"})
     if icon:
+        endereco_element = div_find(icon)
+    elif not icon:
+        icon = soup.find("img", {"src": "//www.gstatic.com/images/icons/material/system_gm/1x/place_gm_blue_24dp.png"})
         endereco_element = div_find(icon)
     else:
         endereco_element = 'Não encontrado'
+    return format_address(endereco_element, store_name, url)
 
-    return format_address(endereco_element, store_name)
 
 def div_find(icon_location):
     icon_div = icon_location.find_parent("div")
-    parent_div = icon_div.find_parent("div")
-    endereco_element = parent_div.get('aria-label')
-    return endereco_element
+    parent_div_icon = icon_div.find_parent("div")
+    next_div = parent_div_icon.find_next_sibling("div")
+    endereco_element = next_div.find("div")
+    return endereco_element.text
 
 
-def format_address(store_address, store_name):
+def format_address(store_address, store_name, url):
+    coordenates = format_coordenates(url)
     loja_endereco = {
         'Loja:': store_name,
-        'Endereço': store_address.replace('Endereço, ', '')
-        }
+        'Endereço': store_address,
+        'Latitude': coordenates['Latitude'],
+        'Longitude': coordenates['Longitude']
+    }
     return loja_endereco
+
+
+def format_coordenates(url):
+    lat_init = url.find('@') + 1
+    end_lat = url[lat_init:].find(',')
+    latitude = url[lat_init:(lat_init + end_lat)]
+    print(latitude)
+
+    lon_init = url.find(latitude) + len(latitude) + 1
+    end_lon = url[lon_init:].find(',')
+    longitude = url[lon_init:(lon_init + end_lon)]
+    print(longitude)
+    coordenates = {
+        'Latitude': latitude,
+        'Longitude': longitude
+    }
+    return coordenates
 
 
 # Lê o arquivo Excel e armazena os dados em um DataFrame
@@ -76,8 +100,9 @@ time.sleep(3)
 
 for index, row in store_list.iterrows():
     store_name = row['Loja']
-    store_address_search = row['Endereço']
-    validated_store_address = search_store_adressess(store_address_search, store_name)
+    store_address = row['Endereço']
+    store_search = store_name + ' - ' + store_address
+    validated_store_address = search_store_adressess(store_search, store_name)
     if validated_store_address['Endereço'] == 'Não encontrado':
         address_list_not_found.append(validated_store_address)
     else:
