@@ -55,12 +55,11 @@ def read_html():
 
 
 def save_excel(database):
-    data = pd.DataFrame(database)
     # abre a caixa de diálogo para seleção do local de salvamento do arquivo Excel
     filename = tk.filedialog.asksaveasfilename(title='Salvar arquivo Excel', filetypes=[('Excel files', '*.xlsx')])
     if not filename.endswith('.xlsx'):
         filename += '.xlsx'
-    data.to_excel(filename, index=False)
+    database.to_excel(filename, index=False)
 
 
 def save_txt():
@@ -71,13 +70,30 @@ def save_txt():
     return filename
 
 
+#funções Selenium
 def open_chrome():
-    driver = webdriver.Chrome()
-    return driver
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option("detach", True)
+    browser = webdriver.Chrome(options=options)
+    return browser
+
+
+def click_btn_wait(location):
+    button = location
+    button.click()
+    time.sleep(2)
+
+
+def click_btn(location,browser):
+    button = location
+    button.click()
+    browser.implicitly_wait(2)
+
 
 def open_firefox():
     driver = webdriver.Firefox
     return driver
+
 
 def insert_site(browser, site):
     open_site = str(site)
@@ -113,6 +129,7 @@ def get_token_dysrup():
     return headers
 
 
+
 def win10_notification(title, msg):
     # Inicializa #
     toaster = ToastNotifier()
@@ -127,6 +144,7 @@ def win10_notification(title, msg):
         icon_path=None,
         duration=5  # 5 segundos
     )
+
 
 def find_loja(lista, nome_parametro, nome_buscado):
     for item in lista:

@@ -1,7 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from bs4 import BeautifulSoup
 import pandas as pd
 from utils import utilsFunctions
 import time
@@ -19,7 +17,6 @@ def click_btn_wait(location):
     button = location
     button.click()
     time.sleep(2)
-
 
 
 def click_btn(location):
@@ -145,48 +142,3 @@ for estado in estados:
 else:
     store_list = pd.DataFrame(stores_info)
     utilsFunctions.save_excel(store_list)
-
-
-
-# for option in dropdown_estado.options:
-#     if option.text != 'Selecione o seu Estado':
-#         estado = option.text
-#         print(estado)
-#
-#         # Seleciona o estado
-#         dropdown_estado.select_by_visible_text(estado)
-#
-#         dropdown_cidades = Select(browser.find_element(By.CLASS_NAME, 'cidade'))
-#         time.sleep(1)
-#         for cidade_option in dropdown_cidades.options:
-#             if cidade_option.text != 'Selecione a cidade':
-#                 cidade = cidade_option.text
-#                 print(cidade)
-#                 dropdown_cidades.select_by_visible_text(cidade)
-#
-#                 dropdown_lojas = Select(browser.find_element(By.CLASS_NAME, 'loja'))
-#                 time.sleep(1)
-#                 for loja_option in dropdown_lojas.options:
-#                     if loja_option.text != 'Selecione sua loja':
-#                         loja = loja_option.text
-#
-#                         dropdown_lojas.select_by_visible_text(loja)
-#                         print(loja)
-#
-#                         btn_confirmar_loja = browser.find_element(By.CLASS_NAME, 'confirmar.btn-laranja')
-#                         btn_confirmar_loja.click()
-#                         time.sleep(2)
-#                         endereco_result = browser.find_element(By.CLASS_NAME, 'info.endereco')
-#                         endereco = endereco_result.text
-#                         print(endereco)
-#                         browser.get(site)
-#                         time.sleep(2)
-#
-#                         btn_trocar_loja = browser.find_element(By.CLASS_NAME, 'seletor-loja.trocar-loja-title')
-#                         btn_trocar_loja.click()
-#
-#                         time.sleep(3)
-#
-
-
-
