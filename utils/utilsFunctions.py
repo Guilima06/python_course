@@ -1,7 +1,7 @@
 import pandas as pd
 from bs4 import BeautifulSoup
-# import tkinter as tk
-# from tkinter import filedialog
+import tkinter as tk
+from tkinter import filedialog
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 import openpyxl
 import requests
 import json
-# from win10toast import ToastNotifier
+from win10toast import ToastNotifier
 
 
 def open_folder():
