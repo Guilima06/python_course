@@ -157,20 +157,16 @@ def delete_old_requests_and_create_new_requests(contract_base_data, contract_des
     edited_product_group = edit_product_group(contract_product_group)
 
     request_group = contract_destiny_data['data']['requests_group']
-
     delete_requests_group = []
-    try:
-        for group in request_group:
-            print(f'Grupo encontrado {group['id']}')
 
+    if len(request_group) != 0:
+        for group in request_group:
             requests_group_data = {
                 'id': group['id'],
                 'control': 'del',
                 'product': []
             }
-            print(f'Grupo ajustado {requests_group_data}')
             delete_requests_group.append(requests_group_data)
-        print(f'lista criada com grupos de pedidos para apagar {delete_requests_group}')
 
         edit_contract = {
             "service_type": "exclusive",
@@ -181,25 +177,26 @@ def delete_old_requests_and_create_new_requests(contract_base_data, contract_des
             'products_group': edited_product_group,
             'requests_group': delete_requests_group
         }
-        print(f'Este json vai editar o contrato para deletar os formulários de pedido.\n{edit_contract}')
+        create_contract(edit_contract)
+    else:
+        print('A lista de formulários estava vazia')
 
-        base_requests_group = contract_base_data['data']['requests_group']
-        new_requests_group = create_requests_group(base_requests_group)
+    base_requests_group = contract_base_data['data']['requests_group']
+    new_requests_group = create_requests_group(base_requests_group)
 
-        edit_contract = {
-            "service_type": "exclusive",
-            "status": "active",
-            'client_id': contract_destiny_data['data']['basic_data']['client_id'],
-            'contract_id': contract_destiny,
-            "flag_id": contract_destiny_data['data']['basic_data']['flag_id'],
-            'products_group': edited_product_group,
-            'requests_group': new_requests_group
-        }
-        print(f'Este json vai atualizar o contrato e inserir os formulários de pedido.\n{edit_contract}')
+    edit_contract = {
+        "service_type": "exclusive",
+        "status": "active",
+        'client_id': contract_destiny_data['data']['basic_data']['client_id'],
+        'contract_id': contract_destiny,
+        "flag_id": contract_destiny_data['data']['basic_data']['flag_id'],
+        'products_group': edited_product_group,
+        'requests_group': new_requests_group
+    }
+    print(f'Este json vai atualizar o contrato e inserir os formulários de pedido.\n{edit_contract}')
+    create_contract(edit_contract)
 
-        return edit_contract
-    except
-
+    return edit_contract
 
 
 def create_product_group(product_group):
