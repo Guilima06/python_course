@@ -2,7 +2,7 @@ import requests
 from utils import utilsFunctions
 import pandas as pd
 
-token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNDY5YjI3ODQzMjhmYzExZmI0NjYyZDY1MDliYzY3MzdjZjkyMGRiNmY0ODMxMThlYmY0MmVjNzVhYzFkYjdmMGZjMTA2ZjQyNTcwZDY0MGQiLCJpYXQiOjE2OTU3NjE0NTUuNDc2MDA4LCJuYmYiOjE2OTU3NjE0NTUuNDc2MDEsImV4cCI6MTcwMzUzNzQ1NS40NzAwMDIsInN1YiI6IjEwNjkiLCJzY29wZXMiOltdfQ.GHe78gPaJM736Laty_mfHhojohcaA3kc6upOm8eFOp3z2UDA_b8qfwZ1ymkHGrpRYdSspKmooKQaFfs3X_uVczkkO1yIvG3IdZRfA7yiMdRMnw2rv2s1E3QmRLLgxga37mhWDbHlCxbuWapOQ9cckcoIB7innAWYoGTBte9nWKQ8iiQxecXHYBUYoGMNWQWlJRVFG24wIJpnaFDMOnq8vygRum6sERq94W_V5cVWixUf3ZDyz1Q8bdtoD01jP6hficixBq0JGAK0aA6JWAd7VXB9Vw1gkTNwBvyCyrQW0oRZD-1JKQGOi5yq-npf0FDv_suuksgXOeStJRdS9toEGwsScon031lqKaG-BO1uYwRMfX2JunDkza77guSnAx0alt82TwXZb8hGmqdYt8EaPYWU6mPFUSIjIKf1ORBOd5hghhVmMUeEMQQGzR9SvcnOruSUexxTbtLHMmmzivGy2TbqrrnEBjJoIIzNSVCXhZaTMf6tn2WCJVzizZwFD0Yh8ZXindTejLEr1oW-Sp7TQyY_rLTrY3BqJIHY2s8GHoDdIAXSxrXV3i_9Lg6iAGgeQO2l7OlUyGkkxLd_9HM5Xg05kxCI5JLoP8ikTl97yWd6ysMJaT-rYw6TWvFojjElUz8UVRnCto8rHVwmdbHWK9pkHhqYQfLMui0fiYa2BLo"
+token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWU1ZGE1ZjVlNTc1ODg2YmE1MDg4YTk0MDZmMjE2MTM2ZDE5ZjI0MzA5OTBjOWNjYTg5OWJjZmVkYWFhZWU4ZWY2NjQ1NzM3ZmUzZTcwYjAiLCJpYXQiOjE2OTkzNzg4MzMuNzM1NDY1LCJuYmYiOjE2OTkzNzg4MzMuNzM1NDY4LCJleHAiOjE3MDcxNTQ4MzMuNzI5MDc4LCJzdWIiOiIxMDY5Iiwic2NvcGVzIjpbXX0.aDygYU9X6dEuZaqPi-qgfTuts2EqLVJmObTVBb-h8sBbk5ddvwuYO-S6lFYJCuJeXDTBDbuzVKhPksa6-pNGMi_taFsncgmll4Wpj-frYduuu5xsSCM0sjyFYIjfwu6aQ0WeaMN55Nps3603CFMLf7Av8tZ2-Vk-GQuTCUPiwjbjcT4utWiyRhzJsRAMi8acDa2RwEEiqPNQ2ObK2w6YuKYTFBpNNaUkO2EBmsDE5XfdTc0Cb2TQr0wt1_XP6f864DEqqVMHOfAR405YDiuykiOZnoXaqWc0PrOK6PeqB1VLaxMGx8txGeowK4oAIk9RSvsEgjmuqRq7HjDxZK7eMHdcE1hvM2Df0BGvvEhTei_L7FucC7U8SDOus7wTI2Zz0jUsNr97cQTnurmiGDBZAJL60xagcLJzlRxsqIwC1WpIJdlBafgF36qIqAhgG_UTJhR7GY07vsGC4xtBSIR5K0AkhbhET4WoQCKiMrVVl_IQCgkYL79ff8H3EhifkDVIMYnB1__VVQggSefip13mK4vzaMWM_pNYJigk1a1tECZAiWo4T2OcmIpmzdGOQX9qCspaboGgLLssFa-IGsBoxbGL_9v9CJjtyPecaJdy6fu5CCrqpXI8YVFBOQ61yGaOWVX5swJ1JPz1z-fHZ1uwy0aa5AuqupPU9WSm3YHuaLQ"
 headers = {'Authorization': f'Bearer {token}'}
 
 
@@ -88,7 +88,6 @@ def get_users():
     return users_json
 
 
-
 def clients_conctracts(clients, contracts):
     contracts_per_client =[]
     for client in clients:
@@ -108,8 +107,6 @@ def clients_conctracts(clients, contracts):
         contracts_per_client.append(client_contract_list)
     # print(contracts_per_client)
     return contracts_per_client
-
-
 
 
 def get_list_itineraries():
@@ -234,13 +231,6 @@ def analyze_routes(contracts, stores, users):
     relatorio_contratos.to_excel('Relatório contratos.xlsx')
 
 
-
-
-
-
-
-
-
 def get_contracts_by_store_id(store_params):
     url = 'https://app.dysrup.com.br/api/v1/web/itinerary/get_contracts_by_store_id'
     response = requests.post(url, headers=headers, json=store_params)
@@ -308,7 +298,6 @@ def get_contracts_name(contracts_information, contracts):
         name = contract['name']
         list_contracts_name.append(name)
     return list_contracts_name
-
 
 
 relatorio()
