@@ -1,8 +1,10 @@
+import time
+
 import requests
 from utils import utilsFunctions
 import pandas as pd
 
-token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMDVhY2FkYmNkNThkZGNmYzg0ODQyYTZkY2IyMDRmODI5OTI1MWI5ZGVlZjk1NDIyZGNmM2MyYmNkNWVlMzIzMzE0ODI2Yjc2YzJhMmVhMzUiLCJpYXQiOjE3MDQ3MzQzNzUuNzQyODQ1LCJuYmYiOjE3MDQ3MzQzNzUuNzQyODQ4LCJleHAiOjE3MTI1MTAzNzUuNzM3MTMsInN1YiI6IjE2Iiwic2NvcGVzIjpbXX0.jTRpcOG6NK3v3oq0c0HZGzIY2X8cxJQN2f-68PM-sAm3HmwHAkRsQ7YtX9HbvcWLGYBJTN1cbEI4bBGfEZtaL_7DE1NbZKpQyTKd-FkuZb_dRZYzOC8hjP9B-zMVqDaFsxxwdxx6uv0BfohquafvYRwuU41tmxOPUNq__Y4GN5kkcObLfOpl_16uMTgva6BOttwNVp1cf2x4IhqbMijsZ5b4E8a2zq6c1gFyCLIHaLZwvmsrTj2h_X2_MceVKCkUTDAjqdS3GaFshd2urQs6PqkXuunORlmwIfRQ-SNabG5j1idLOpScrCTkv4X6SerOB8Lu2GNGZvWUFar6T-XltYHVToLLALv-QOCvUxtg0mGR1ux1Sw_erIxZD-myABp7VWVMPumyl8Q4lr9t_HHrW8oay8H6iEnEm_nlIXtMCqz8tDYJJSVazf_TH2Y2fq-Cx7bO3QqGWGAcPN2dfBiSEUWvpj6UvgqyC1SoWs5UB5g9FxQ4ZzarxfdbENgat4OCWlh8GDtbSkvjr9TTA9VP5FPNQOP2izwgbnSvzpQrcgF7jwLcBiri2bsqxKL5oIVpybfgpyFeX0jdSQLnbsEMwpnHDUSl8Q6xza5SmwkTxCgJW1M-6o9wo6sNBxzuZzCO1VDNpbAV82xXT9vfCWPBxlUksunrv_xJ7usgzM_BUIM"
+token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiM2U2YjI2MTRjOTJmYTcyYzZmMmZiNDlhMjhmNmQwZDExY2IyZWRhMjQzMWM2ZWFiNDgyYjExNjcwM2M4MTJhYzgwOTk4YjFmYjEyZGUzOWUiLCJpYXQiOjE3MDQ3NjgxMjguMTIwNjM5LCJuYmYiOjE3MDQ3NjgxMjguMTIwNjQyLCJleHAiOjE3MTI1NDQxMjguMTE1MDgyLCJzdWIiOiIxNiIsInNjb3BlcyI6W119.Epf9h8Vhcp3LZIEYyDUdMjmX5aZjOQgU8m8vegQzGCjv1l1k-lGQFd0_WiiOsyXHXW9VTq__eaK1dEhRogRMu9TkCkc3iSKzP1EeGZxUbGFx4Te2POKSm2_iQPDJ2um-puuVm44GIn4MhKA-bVilv_b8O9CNWFTITZcBKZCyB3pd8Sm9PzbEL0lpagi-Bes2ixdQZkZU_-Wu-HvXoAdG3CpUjKO-0PCg5IKczkwrrz8E066F9jLopsx00zQw63vN1_0N8r_D-7Ii5NiJsX-2T0d-rVGYFAqcD_3kOaLRDgA9ugRAbW8vysPzpejManjehhn50JycRa7MOj8gYU0EMCxsvdA_D1KJzl-ojN2nR22bD7xz6KAN4acnpInaxRUGjLL0kjcEKIEaabXQ2vTSAvaSi0dp7131th4XFeC-lRdjGPlU7Wq7YykK0BEir0csjtZemI7IP4mcDZhKFco7voL0UaMZU5E9EMf8G8XfQ_yKwfjBKfGkD-BxV_8EDoArM_W2yr74DJq5vp1HI7FjxVaRqbfx0GlzkF-5fRNJLTpBvzoVUVfQyBt_UL6y4l_9heLILZpB9VjRtOnd9fNX5QCezZJVSrwGlHKSdrhZv8-b72ymJDv7lua_pzxomq1gUhUfKijktdSuPF-gccqOzHtO7L5RdMUusPBYXdvJMlA"
 headers = {'Authorization': f'Bearer {token}'}
 
 
@@ -154,7 +156,8 @@ def format_new_contract(contract_data):
 def delete_old_requests_and_create_new_requests(contract_base_data, contract_destiny_data, contract_destiny):
 
     contract_product_group = contract_destiny_data['data']['products_group']
-    edited_product_group = edit_product_group(contract_product_group)
+    edited_product_group = delete_product_group(contract_product_group)
+    print(edited_product_group)
 
     request_group = contract_destiny_data['data']['requests_group']
     delete_requests_group = []
@@ -177,9 +180,14 @@ def delete_old_requests_and_create_new_requests(contract_base_data, contract_des
             'products_group': edited_product_group,
             'requests_group': delete_requests_group
         }
+        print(f'Edição do contrato removendo mix e pedidos\n{edit_contract}\n')
         create_contract(edit_contract)
+        # time.sleep(5)
     else:
         print('A lista de formulários estava vazia')
+
+    base_product_group = contract_base_data['data']['products_group']
+    new_products_group = create_product_group(base_product_group)
 
     base_requests_group = contract_base_data['data']['requests_group']
     new_requests_group = create_requests_group(base_requests_group)
@@ -190,10 +198,10 @@ def delete_old_requests_and_create_new_requests(contract_base_data, contract_des
         'client_id': contract_destiny_data['data']['basic_data']['client_id'],
         'contract_id': contract_destiny,
         "flag_id": contract_destiny_data['data']['basic_data']['flag_id'],
-        'products_group': edited_product_group,
+        'products_group': new_products_group,
         'requests_group': new_requests_group
     }
-    print(f'Este json vai atualizar o contrato e inserir os formulários de pedido.\n{edit_contract}')
+    print(f'Este json vai atualizar o contrato e inserir o mix e os formulários de pedido.\n{edit_contract}\n')
     create_contract(edit_contract)
 
     return edit_contract
@@ -212,13 +220,13 @@ def create_product_group(product_group):
     return products_group
 
 
-def edit_product_group(product_group):
+def delete_product_group(product_group):
     products_group = []
 
     for group in product_group:
         new_group = {
             'id': group['id'],
-            'control': 'edit',
+            'control': 'del',
             'product': group['product'],
             'store': group['store']
         }
