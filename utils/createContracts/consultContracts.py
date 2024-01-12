@@ -4,7 +4,7 @@ import requests
 from utils import utilsFunctions
 import pandas as pd
 
-token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiM2U2YjI2MTRjOTJmYTcyYzZmMmZiNDlhMjhmNmQwZDExY2IyZWRhMjQzMWM2ZWFiNDgyYjExNjcwM2M4MTJhYzgwOTk4YjFmYjEyZGUzOWUiLCJpYXQiOjE3MDQ3NjgxMjguMTIwNjM5LCJuYmYiOjE3MDQ3NjgxMjguMTIwNjQyLCJleHAiOjE3MTI1NDQxMjguMTE1MDgyLCJzdWIiOiIxNiIsInNjb3BlcyI6W119.Epf9h8Vhcp3LZIEYyDUdMjmX5aZjOQgU8m8vegQzGCjv1l1k-lGQFd0_WiiOsyXHXW9VTq__eaK1dEhRogRMu9TkCkc3iSKzP1EeGZxUbGFx4Te2POKSm2_iQPDJ2um-puuVm44GIn4MhKA-bVilv_b8O9CNWFTITZcBKZCyB3pd8Sm9PzbEL0lpagi-Bes2ixdQZkZU_-Wu-HvXoAdG3CpUjKO-0PCg5IKczkwrrz8E066F9jLopsx00zQw63vN1_0N8r_D-7Ii5NiJsX-2T0d-rVGYFAqcD_3kOaLRDgA9ugRAbW8vysPzpejManjehhn50JycRa7MOj8gYU0EMCxsvdA_D1KJzl-ojN2nR22bD7xz6KAN4acnpInaxRUGjLL0kjcEKIEaabXQ2vTSAvaSi0dp7131th4XFeC-lRdjGPlU7Wq7YykK0BEir0csjtZemI7IP4mcDZhKFco7voL0UaMZU5E9EMf8G8XfQ_yKwfjBKfGkD-BxV_8EDoArM_W2yr74DJq5vp1HI7FjxVaRqbfx0GlzkF-5fRNJLTpBvzoVUVfQyBt_UL6y4l_9heLILZpB9VjRtOnd9fNX5QCezZJVSrwGlHKSdrhZv8-b72ymJDv7lua_pzxomq1gUhUfKijktdSuPF-gccqOzHtO7L5RdMUusPBYXdvJMlA"
+token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMDMxMDY1NTk1OWYyMzE3ZTFiMjEwY2Y5MjlhODZkNTFkMzI5MGE5ZTY2NTk1YjBmNzBiNDg5N2NjODUzNWFmMmUyODIyMzUwOTRlODI0ZjEiLCJpYXQiOjE3MDQ5MDgzMTEuMDE5NjA2LCJuYmYiOjE3MDQ5MDgzMTEuMDE5NjA5LCJleHAiOjE3MTI2ODQzMTEuMDEyNzk0LCJzdWIiOiIxMDY5Iiwic2NvcGVzIjpbXX0.DGkQx42OEAqD7qW2aCdQf5QmT6blQtUqq49Wp4VebDgbLZi3AYNGfhot6vMBcIpunKqdUun_WEYIPt4F8uSIf7EV9fMIeFRYUJha-Kh2sw_rDf7xkEokosSc9cCY8EOaMZi_imKkRSoPDQZFoOp3tDsr9yEB-4gf2ZUBYtQnoq7TCVXBWJW2WixJoNzwpUrvOysaqoMGjlDxmc5s13gX9E8m6OfSYie-OSPDq6TJSV1rclApNmEIWQRZ7ZAtcMrHKYPnCqg8BxF6lR3NwogP0wtidwEM3nGku2mJ_ex1OgyKcZGxwFiPn2KMM7OBQHQZroJ1iI80THQWPuRiEb0oZ96wd2gLcwC1m1huvCXcYoEVnRMPlRJiPfi6gwm5FrlmdWvJbZTkQ6Mz8vRPhAtYrz-4K-ph_sF6qWSv1dSQxn7WHgUjv6jqEVluCM31gWekfb3OUuLkMKVpM5ZrTVeC0_Ux7TPWkwuJh_NX5vumiRB_-c3ZdWOQ8q17BddcgLOPp5naupztw1Wthuk2hq86HmfYNYfRMNqmWuMiKop1XwCDyQJQpV2eUiXenfUilZCWQigUCstlzTkv3sK89q0gpA3hlb62qiOYt-q5uwOEW78UIFxjgiEHD3W5zBhmoW0aMyHg6dzPdYe9ZBQO75R9D--N1YEah-9o20kTnA9qdgY"
 headers = {'Authorization': f'Bearer {token}'}
 
 
@@ -271,8 +271,29 @@ def create_contract(new_contract):
     print(status_create)
 
 
-while True:
-    consult_contracts()
-    user = str(input('Continuar? '))
-    if user in 'Nn':
-        break
+def generate_rel():
+    # client = escolher_client()
+
+    parameters = {
+        "report_entity": "scheduled_attendances",
+        "client_id": 301,
+        "preview": True,
+        "per_page": '10',
+        'page': 1
+    }
+
+    url = 'https://app.dysrup.com.br/api/v1/admin/report/generate'
+    response = requests.post(url, headers=headers, json=parameters)
+    attendances = response.json()
+    print(attendances)
+
+
+
+# while True:
+#     consult_contracts()
+#     user = str(input('Continuar? '))
+#     if user in 'Nn':
+#         break
+
+
+generate_rel()
